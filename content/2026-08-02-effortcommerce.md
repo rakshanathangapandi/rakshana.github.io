@@ -5,7 +5,6 @@ Tags: #EffortCommerce, #Rewards, #Credits, #Gamification
 Slug: effortcommerce-turning-work-into-currency
 Status: published
 
-
 Ever wished the effort you put in could be spent like money? EffortCommerce turns your work into credits, and those credits into real rewards from a store. No confusing point systems, no waiting around — just a simple exchange between what you do and what you get back.
 
 ## What Is EffortCommerce?
