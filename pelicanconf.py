@@ -24,7 +24,7 @@ PYGMENTS_STYLE_DARK = 'native'  # Dark mode
 
 # Static files
 STATIC_PATHS = ['images']
-SITELOGO = 'images/rakshana.png'
+SITELOGO = 'images/raksh.png'
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
@@ -38,7 +38,7 @@ DISPLAY_PAGES_ON_MENU = True
 
 # Social widget
 SOCIAL = (
-    ("github", "https://github.com/aceraksh"),
+    ("github", "https://github.com/rakshanathangapandi"),
     ("linkedin", "https://www.linkedin.com/in/rakshana-thangapandi"),
     ("substack", "https://articlevil.substack.com/"),
 )

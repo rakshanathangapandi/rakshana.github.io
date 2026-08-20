@@ -2,7 +2,7 @@
 
 Personal blog built with [Pelican](https://getpelican.com/) and deployed to GitHub Pages via GitHub Actions.
 
-🔗 **Live site:** [https://aceraksh.github.io/rakshana.github.io](https://aceraksh.github.io/rakshana.github.io)
+🔗 **Live site:** [https://rakshanathangapandi.github.io](https://rakshanathangapandi.github.io)
 
 ## Setup
 
