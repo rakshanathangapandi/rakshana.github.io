@@ -42,5 +42,6 @@ publishconf.py    # Production config
 ```
 
 
-## Screenshots
-![1775872959937](image/README/1775872959937.png)
+## Profile Image
+
+![raksh](content/images/raksh.png)
