@@ -1,6 +1,7 @@
 AUTHOR = 'Rakshana'
 SITENAME = 'Rakshana'
 SITETITLE = 'Rakshana'
+SITESUBTITLE = 'Engineer · Writer · Builder'
 SITEURL = ""
 PATH = "content"
 TIMEZONE = 'Asia/Kolkata'
@@ -44,6 +45,12 @@ SOCIAL = (
 )
 
 DEFAULT_PAGINATION = 10
+
+# Custom CSS override
+CUSTOM_CSS = 'theme/stylesheet/custom.css'
+
+# Show summary + "Continue reading" button on index
+SUMMARY_MAX_LENGTH = 100
 
 # Uncomment following line if you want document-relative URLs when developing
 # RELATIVE_URLS = True
