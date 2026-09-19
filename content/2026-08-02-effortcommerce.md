@@ -1,7 +1,7 @@
 Title: EffortCommerce: Turning Work Into Currency
 Date: 2026-08-02
 Category: Product
-Tags: #EffortCommerce, #Rewards, #Credits, #Gamification
+Tags: EffortCommerce, Rewards, Credits, Gamification
 Slug: effortcommerce-turning-work-into-currency
 Status: published
 

@@ -4,6 +4,8 @@ Personal blog built with [Pelican](https://getpelican.com/) and deployed to GitH
 
 🔗 **Live site:** [https://rakshanathangapandi.github.io](https://rakshanathangapandi.github.io)
 
+📝 **Latest post:** [EffortCommerce: Turning Work Into Currency](https://rakshanathangapandi.github.io/effortcommerce-turning-work-into-currency.html)
+
 ## Setup
 
 ```bash
@@ -44,4 +46,4 @@ publishconf.py    # Production config
 
 ## Profile Image
 
-![raksh](content/images/raksh.png)
+![raksh](https://raw.githubusercontent.com/rakshanathangapandi/rakshana.github.io/main/content/images/raksh.png)
