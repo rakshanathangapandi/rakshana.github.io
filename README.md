@@ -2,9 +2,9 @@
 
 Personal blog built with [Pelican](https://getpelican.com/) and deployed to GitHub Pages via GitHub Actions.
 
-🔗 **Live site:** [https://rakshanathangapandi.github.io](https://rakshanathangapandi.github.io)
+🔗 **Live site:** [https://rakshanathangapandi.github.io/rakshana.github.io](https://rakshanathangapandi.github.io/rakshana.github.io)
 
-📝 **Latest post:** [EffortCommerce: Turning Work Into Currency](https://rakshanathangapandi.github.io/effortcommerce-turning-work-into-currency.html)
+📝 **Latest post:** [EffortCommerce: Turning Work Into Currency](https://rakshanathangapandi.github.io/rakshana.github.io/effortcommerce-turning-work-into-currency.html)
 
 ## Setup
 
