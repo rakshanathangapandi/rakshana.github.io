@@ -1,24 +1,24 @@
 /* ============================================================
-   Custom overrides to match the reference design
-   ============================================================ */
+  Custom overrides for the dark three-column blog layout
+  ============================================================ */
 
 /* ---------- Google Fonts upgrade ---------- */
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap');
 
 /* ---------- Base typography ---------- */
 body {
-  font-family: 'Inter', 'Source Sans Pro', 'Roboto', sans-serif;
+  font-family: 'Inter', 'Source Sans Pro', sans-serif;
   font-size: 1.04em;
   line-height: 1.75em;
-  color: #1a1a1a;
-  background-color: #f8f8f6;
+  color: #e5e5e5;
+  background: #292929;
 }
 
 /* Article body uses a slightly warmer reading tone */
 main article div p {
   line-height: 1.85;
   font-size: 1.0em;
-  color: #1e1e1e;
+  color: #e5e5e5;
   margin-bottom: 1.1em;
 }
 
@@ -27,14 +27,14 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Merriweather', 'Georgia', serif;
   font-weight: 400;
   line-height: 1.25;
-  color: #D9411E;
+  color: #2f9bff;
 }
 
 /* Article headings inside content */
 main article h1,
 main article h2,
 main article h3 {
-  color: #D9411E;
+  color: #2f9bff;
   margin-top: 1.6em;
   margin-bottom: 0.5em;
 }
@@ -45,17 +45,17 @@ main article h3 { font-size: 1.3em; }
 
 /* Article title link on single-article page */
 article.single header h1 {
-  color: #D9411E;
+  color: #2f9bff;
   font-size: 2.1em;
 }
 
 /* Index page article title links */
 main article header h2 a {
-  color: #D9411E;
+  color: #2f9bff;
   font-weight: 600;
 }
 main article header h2 a:hover {
-  color: #ff5a20;
+  color: #70baff;
 }
 
 /* Bold lead text styling — first strong in article body */
@@ -73,9 +73,9 @@ main article header p {
 
 /* ---------- Sidebar ---------- */
 aside {
-  background: linear-gradient(170deg, #1c1c2e 0%, #16213e 60%, #0f3460 100%);
+  background: #252525;
   color: #e8e8e8;
-  border-right: none;
+  border-right: 1px solid #353535;
 }
 
 /* Profile image — circular with white ring + soft shadow */
@@ -182,12 +182,73 @@ ul.social a .social-icon-svg {
 
 /* ---------- Main content area ---------- */
 main {
-  background-color: #f8f8f6;
+  background-color: #292929;
+  min-width: 0;
+}
+
+/* Keep the article column centered between the profile and archive rails. */
+main {
+  flex: 1 1 auto;
+  width: auto;
+  padding: 0 42px;
+}
+
+.archive-sidebar {
+  flex: 0 0 245px;
+  width: 245px;
+  min-height: 100vh;
+  padding: 28px 18px;
+  text-align: left;
+  box-sizing: border-box;
+}
+
+.archive-sidebar h2 {
+  margin: 0 0 12px;
+  color: #bdbdbd;
+  font-family: 'Inter', sans-serif;
+  font-size: 1.05em;
+  font-weight: 400;
+}
+
+.archive-sidebar ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.archive-sidebar summary {
+  color: #bdbdbd;
+  cursor: pointer;
+  font-size: 0.82em;
+  padding: 5px 0;
+}
+
+.archive-sidebar summary span {
+  color: #777;
+  float: right;
+}
+
+.archive-sidebar details > ul {
+  border-left: 1px solid #444;
+  margin: 2px 0 5px 7px;
+  padding-left: 13px;
+}
+
+.archive-sidebar details > ul a {
+  color: #8d8d8d;
+  display: block;
+  font-size: 0.76em;
+  line-height: 1.6;
+  padding: 2px 0;
+}
+
+.archive-sidebar details > ul a:hover {
+  color: #2f9bff;
 }
 
 /* Article cards on index */
 main article {
-  margin: 0 7% 1.5% 7%;
+  margin: 0 auto 1.5em;
   max-width: 780px;
   padding-bottom: 1em;
 }
@@ -207,7 +268,7 @@ main article div {
 
 /* ---------- Continue reading button ---------- */
 a.btn {
-  background-color: #D9411E;
+  background-color: #258cf0;
   border-radius: 4px;
   font-size: 0.78em;
   padding: 0.5em 1.0em;
@@ -217,12 +278,12 @@ a.btn {
 }
 
 a.btn:hover {
-  background-color: #c0360f;
+  background-color: #57aaff;
 }
 
 /* ---------- Tag pills ---------- */
 .tag-cloud a {
-  background-color: #2c5282;
+  background-color: #258cf0;
   border-radius: 3px;
   font-size: 0.72em;
   padding: 0.2em 0.6em;
@@ -240,8 +301,8 @@ main article header a[href*="/tag/"] {
 
 /* ---------- Blockquotes ---------- */
 main article blockquote {
-  border-left: 4px solid #D9411E;
-  background-color: rgba(217, 65, 30, 0.04);
+  border-left: 4px solid #258cf0;
+  background-color: rgba(37, 140, 240, 0.08);
   padding: 12px 20px;
   margin: 1.5em 0;
   font-style: italic;
@@ -250,7 +311,7 @@ main article blockquote {
 
 /* ---------- Code blocks ---------- */
 main article pre {
-  border-left: 4px solid #D9411E;
+  border-left: 4px solid #258cf0;
   border-radius: 0 5px 5px 0;
   background-color: #f4f4f4;
 }
@@ -295,7 +356,7 @@ main footer p {
   }
 
   main article blockquote {
-    background-color: rgba(217, 65, 30, 0.08);
+    background-color: rgba(37, 140, 240, 0.08);
     color: #bbb;
   }
 
@@ -334,6 +395,7 @@ main footer p {
 
   main {
     padding-left: 0 !important;
+    padding-right: 0;
   }
 
   main article {
@@ -342,5 +404,11 @@ main footer p {
 
   ul.social {
     padding-top: 16px !important;
+  }
+
+  .archive-sidebar {
+    min-height: auto;
+    width: 100%;
+    padding: 18px 5%;
   }
 }

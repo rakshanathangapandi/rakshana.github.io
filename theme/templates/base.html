@@ -176,6 +176,26 @@
     {% include "partial/footer.html" %}
   </main>
 
+  {% if page_name == 'index' and articles %}
+  <aside class="archive-sidebar">
+    <h2>Archives</h2>
+    <ul>
+      {% for year, year_articles in dates|groupby('date.year')|sort(reverse=true) %}
+      <li>
+        <details open>
+          <summary>{{ year }} <span>{{ year_articles|length }}</span></summary>
+          <ul>
+            {% for article in year_articles|sort(attribute='date', reverse=true) %}
+            <li><a href="{{ SITEURL }}/{{ article.url }}">{{ article.locale_date }}</a></li>
+            {% endfor %}
+          </ul>
+        </details>
+      </li>
+      {% endfor %}
+    </ul>
+  </aside>
+  {% endif %}
+
   {% include "partial/jsonld.html" %}
   {% include "partial/guages.html" %}
   {% include "partial/addthis.html" %}
