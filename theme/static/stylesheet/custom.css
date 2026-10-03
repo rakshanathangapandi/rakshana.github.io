@@ -58,10 +58,11 @@ main article header h2 a:hover {
   color: #70baff;
 }
 
-/* Bold lead text styling — first strong in article body */
+/* Bold lead text styling — first strong in article body.
+   Must stay light: body background is forced dark in both schemes. */
 main article div p strong:first-child,
 main article div > p:first-of-type strong {
-  color: #1a1a1a;
+  color: #f4f4f4;
 }
 
 /* Posted-on metadata line */
@@ -295,7 +296,7 @@ a.btn:hover {
 
 /* Index tag links (in the "Tagged with" line) */
 main article header a[href*="/tag/"] {
-  color: #2c5282;
+  color: #7ab8ff;
   font-weight: 500;
 }
 
@@ -306,7 +307,7 @@ main article blockquote {
   padding: 12px 20px;
   margin: 1.5em 0;
   font-style: italic;
-  color: #444;
+  color: #c9d4e3;
 }
 
 /* ---------- Code blocks ---------- */
