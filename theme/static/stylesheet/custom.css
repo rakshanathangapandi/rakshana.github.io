@@ -317,6 +317,14 @@ main article pre {
   background-color: #f4f4f4;
 }
 
+/* Pygments' light themes set .highlight background to #fff but leave plain
+   tokens (.n .p .k .kn .mi) colourless, so they inherit body text colour
+   (#e5e5e5) and vanish against white. Force an explicit readable default. */
+main article pre,
+main article .highlight {
+  color: #24292e;
+}
+
 main article *:not(pre) > code {
   background-color: #f0f0f0;
   border: 1px solid #ddd;
@@ -369,6 +377,13 @@ main footer p {
 
   main article pre {
     background-color: #222;
+  }
+
+  /* Mirror Pygments' native dark default, which the light-mode rule above
+     would otherwise override with dark text. */
+  main article pre,
+  main article .highlight {
+    color: #d0d0d0;
   }
 
   main hr,
